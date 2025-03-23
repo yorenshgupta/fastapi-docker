@@ -11,5 +11,5 @@ jobs:
       - name: Build & Push Image
         run: |
           echo ${{ secrets.DOCKERTOKEN }} | docker login -u "yorenshgupta9" --password-stdin
-          docker build -t <yorenshgupta9>/fastapi-app:latest .
+          docker build -t yorenshgupta9>/fastapi-app:latest .
           docker push <yorenshgupta9>/fastapi-app:latest
